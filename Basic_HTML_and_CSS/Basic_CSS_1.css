@@ -1,4 +1,11 @@
-p {
-	color: purple;
-	text-align: right;
+h1 {
+	background-color: yellow;
+}
+body {
+	font-style: italic;
+	text-align: center;
+}
+
+.Class_A {
+	color: blue;
 }

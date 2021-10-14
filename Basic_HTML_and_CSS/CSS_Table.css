@@ -2,7 +2,7 @@ table {
 	border: 1px solid silver;
 }
 td:hover {
-	background-color: orange
+	background-color: orange;
 	color: blue;
 }
 tr, th {

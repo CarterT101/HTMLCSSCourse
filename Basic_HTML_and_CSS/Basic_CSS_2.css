@@ -4,3 +4,6 @@ p {
 	font-size: large;
 	text-align: center-left;
 }
+.shadow {
+	text-shadow: 2px 2px #0000FF
+}

@@ -1,0 +1,11 @@
+.container .squares:nth-child(-n+4) { /* -n means to start with first one and then +4 means the four squares we are working with */
+    background-image: url("../Website_1/icons/icons.png"); /* ".." means to go back in a folder */
+    color: #fff;
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 25%
+    cursor: pointer;
+}

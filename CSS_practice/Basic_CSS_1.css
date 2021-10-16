@@ -1,11 +1,84 @@
+body {
+    background-color: #fff;
+}
+h1 {
+    color: rgba(8,141,165,1);
+    margin-left:100px;
+    text-shadow: 1px .5px 4px rgba(0,0,0, .6);
+}
+
+.container {
+    width: 450px;
+    height: 450px;
+    background-color: #facbd7;
+    border: 2px solid black;
+    border-radius: 5%;
+}
+
+/* SELECT ALL SQUARES IN THE ARRAY */
+
 .container .squares:nth-child(-n+4) { /* -n means to start with first one and then +4 means the four squares we are working with */
     background-image: url("../Website_1/icons/icons.png"); /* ".." means to go back in a folder */
     color: #fff;
-    float: left;
+    float: left; /* takes all the images and puts them side by side "floating" */
     width: 100px;
     height: 100px;
     margin: 5px;
     border: 1px solid black;
     border-radius: 25%
-    cursor: pointer;
+    cursor: pointer; /* denotes that you can type or click, changes cursor icon */
+    /* next line of code is saying
+    transition-property: ;
+    transition-duration; ;
+    transition-delay: ; */
+    transition: transform .5s ease-in-out;
+}
+
+/* SELECT ALL SQUARES PARAGRAPHS IN THE ARRAY */
+
+.squares:nth-child(-n+4) p{
+    font-family: "Helvetica Neue", Helvetica, Arial, Helvetica, sans-serif; /* when listing multiple fonts, if the client does not have that specific font it will use the next one available */
+    font-size: 45px; /* does not have to be cm, can be px*/
+    font-weight: 700; /* boldness */ 
+    text-align: center;
+    margin: 0;
+    text-shadow: 2px 1px 4px rgba(0,0,0, 0.8);
+}
+
+/* HOVER EFFECTS */
+
+
+
+.container .squares:nth-child(-n+4):hover { /* this selects all containers and squares so the bottom code changes to whatever this is saying so in this case whenever you hover over one of the images it changes images */
+    background-image: url("../Website_1/icons/icons2.png");
+    transform: scale(.5); /* transform, property scale which makes something bigger or smaller */
+    animation-name: race; /* animation effect, at certain times it will change */
+    animation-duration: 2.5s; 
+    animation-iteration-count: infinite; /* how many times can you do the animation */
+    animation-timing-function: cubic-bezier(2.5,.2,.3,2); /* animation style, instead of "ease-in-ease-out */
+}
+
+.squares:nth-child(1):hover { /* Whenever you "hover" it will change the images to the specified image above, and changes the background to the background color below.*/
+    background: #13b44f;;   /*nth-child(1) (or not 1) chooses which square you are changing, since there are 4 squares, 1-4 is what we have for this example */
+}
+.squares:nth-child(2):hover {
+    background: #d861af;
+}
+.squares:nth-child(3):hover {
+    background: #81205f;
+}
+.squares:nth-child(4):hover {
+    background: #77b800;
+}
+
+/* ANIMATION EFFECT */
+
+@keyframes race { /* animation-name: race; THE VALUE. This is where we CALL the animation-name */
+    0%, 100% { /* starts at 0%, ends at 100% */
+        transform: translateY(0px); /* move Y axis, 0px so it stays still */
+        background-image: url(../Website_1/icons/icons2.png); /* changes image when hovered and moving */
+    }
+    50% { /* This is the halfway point between the 0% and 100% */
+        transform: translateY(330px); /* positive means down, negative means down */
+    }
 }

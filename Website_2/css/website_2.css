@@ -103,7 +103,7 @@ section {
 
 .row {
     margin-right: -15px;
-    margin-left: 15px;
+    margin-left: -15px;
 }
 
 .clearfix:after, /* fixes wrongly spaced out sections, or effects not ending and this is the fix */
@@ -127,7 +127,7 @@ section {
 .menu-container {
     max-height: 340px;
     margin: 0% auto; /* 0% is margin top and bottom, auto is margin left and right, this centers something */
-    content: " ";
+    content: "";
     width: 100%;
     position: fixed; /* makes it always toward top of screen */
     z-index: 100; /* ensures it is top most */
@@ -184,8 +184,8 @@ section {
 
 .flex-container {
     display: -webkit-flex;
-    display: flex;
-    flex-wrap: wrap;
+    display: flex; 
+    flex-wrap:wrap;
     padding: 10px;
     border-radius: 8px;
     margin: 0px auto;

@@ -1,34 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title> Website Assignment </title>
+		<title> Switzerland </title>
 		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/one_page_website.css">
 	</head>
-	<body style="background-color:#47D8FC">
-		<nav>
-			<a href="#pics"> Pictures! </a>
-			<a href="#vids"> Videos! </a>
-		</nav>
-			<header style="text-align:center;"> This is my website </header>
-				<p style="text-align:center;"> Welcome, to the wonderful website I have created! </p>
-			
+	<body>
+
+		<!--NAV-->
+
+		<div>
+			<nav>
+				<a href="#pics"> Pictures! </a>
+				<a href="#vids"> Videos! </a>
+			</nav>
+		</div>
+
+		<!--END NAV-->
+
+		<!--HEADER-->
+
+		<div>
+			<header><h1> This is Switzerland! </h1></header>
+				<p> Welcome, to the wonderful website I have created! </p>
+		</div>
+
+		<!--END HEADER-->
+
+		<!--GALLERY-->
+
+		<div>
 			<p> Enjoy some photos! </p>
-		<br>
-			<img id="pics" src="switzerland.jpg" height="25%" width="25%"> <img src="switzerland_1.jpg" height="25%" width="25%"> <img src="switzerland_2.jpg" height="25%" width="25%">
-		<br>
-			<h3> Sign up to go! </h3>
-				<form action="" method="post">
-					Email: <input type="text" name="email"> <br>
-					Password: <input type="text" name="email"> <br>
-				</form>
-		<br>
+			<img id="pics" src="images/switzerland.jpg" height="25%" width="25%"> <img src="images/switzerland_1.jpg" height="25%" width="25%"> <img src="images/switzerland_2.jpg" height="25%" width="25%">
+		</div>
+
+		<!--END GALLERY-->
+
+		<!--VIDEO-->
+
+		<div>
+			<br>
 			<iframe id="vids" height="360" width="640" src="https://www.youtube.com/embed/linlz7-Pnvw"> </iframe>
-		<br>
-		<br>
-			<footer style="font-size=70%"> This was a website made by Carter T. </footer>	
-		
-		
-		
-		
+			<br>
+		</div>
+	
+			<!--END VIDEO-->
+
+		<!--SIGNUP-->
+
+		<div id="contact" class="signup">
+			<h3> Sign up to go! </h3>
+					
+						<div>
+							<form action="" method="post">
+								Email: <input type="text" name="email" placeholder="Input your email here"> <br>
+								Password: <input type="text" name="email" placeholder="Input your password here"> <br>
+							</form>
+						</div>
+						<div class="flag">
+							<span class="white stripever"></span>
+							<span class="white stripehor"></span>
+					</div>
+					<br>
+		</div>
+
+
+		<!--END SIGNUP-->
+
+		<!--FOOTER-->
+		<div>
+			<footer id="footer"> This was a website made by Carter T. </footer>	
+		</div>
+		<!--END FOOTER-->
+
 	</body>
 </html>

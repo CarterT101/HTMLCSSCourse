@@ -14,7 +14,9 @@
   </head>
   <body>
 
-    <div class="container">
+    <!--NAV BAR-->
+
+    <div id="home" class="container">
 
         <nav class="navbar navbar-expand-lg navbar-light bg-warning">
             <a class="navbar-brand" href="#"></a>
@@ -25,24 +27,24 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Places</a>
+                  <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle" href="#location" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Our Locations <img style="padding-bottom: 5px;" width="10%" height="10%" src="Img/Icon/map-marker-3x.png" alt="Location icon">
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">California</a>
-                    <a class="dropdown-item" href="#">Oregon</a>
+                    <a class="dropdown-item" href="#cal">California</a>
+                    <a class="dropdown-item" href="#ore">Oregon</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Online</a>
+                    <a class="dropdown-item" href="#home">Online</a>
                   </div>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">FAQ</a>
+                  <a class="nav-link" href="#faq">FAQ</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#about">About</a>
                 </li>
               </ul>
               <form class="form-inline my-2 my-lg-0">
@@ -51,23 +53,28 @@
               </form>
             </div>
           </nav>
+          
+          <!--Title card-->
 
           <div class="jumbotron jumbotron-fluid bg-light text-center">
             <div class="container">
               <h1 class="display-4">Volcanoes!</h1>
               <p class="lead">Explore the volcanoes with us on the west coast!</p>
+              <img src="Img/background.png" class="card-img" alt="Mt Shasta Photo">
             </div>
           </div>
+
+          <!--About-->
 
         <div class="container">
             <div class="row align-items-start">
               <div class="col">
 
-                <img class="img-fluid" src="Img/img_1.png" alt="Mt. Lassen Photo">
+                <img class="img-fluid" src="Img/img_4.png" alt="Map of west coast">
 
                 
               </div>
-              <div class="col">
+              <div id="about" class="col">
                 
                     <h3> Accommodations: </h3>
                     <p> Our beautiful volcanoes on the west coast are excellent for travelers! <i class="fas fa-mountain"></i> </p>
@@ -95,15 +102,77 @@
             </div>
         </div>
 
+        <!--INFO CARDS-->
+
+        <div class="container my-5">
+          <div id="cal" class="row align-items-start">
+            <div class="col">
+                    <div class="card" style="width: 18rem;">
+                      <img class="card-img-top" src="Img/img_1.png" alt="Image of Mt. Lassen">
+                    <div class="card-body">
+                      <p class="card-text">Mount Lassen is a beautiful volcano in Northern California! Sign up for a day below!</p>
+                      <span class="badge badge-primary">11/01/21</span> <span class="badge badge-primary">11/02/21</span> <span class="badge badge-primary">11/03/21</span>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col">
+                  <div id="ore" class="card" style="width: 18rem;">
+                      <img class="card-img-top" src="Img/img_2.png" alt="Image of Mt. Hood">
+                    <div class="card-body">
+                        <p class="card-text">Explore Mt. Hood in Oregon! Sign up for a day below!</p>
+                        <span class="badge badge-primary">11/01/21</span> <span class="badge badge-primary">11/02/21</span> <span class="badge badge-primary">11/03/21</span>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="Img/img_3.png" alt="Image of Mt. Shasta">
+                  <div class="card-body">
+                      <p class="card-text">Mt. Shasta has amazing views of the surrounding area, of course you'll have to hike up it first! Sign up for a day below!</p>
+                      <span class="badge badge-primary">11/01/21</span> <span class="badge badge-primary">11/02/21</span> <span class="badge badge-primary">11/03/21</span>
+                  </div>
+                </div>
+            </div>
+          </div>
+      
+        <!--EMAIL-->
+
         <div class="text-center">
             <form>
-                <div class="form-group">
-                  <label for="exampleInputEmail1" class="my-5">Email address</label>
+                <div class="form-group my-5">
+                  <label for="exampleInputEmail1">Email address</label>
                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email to get your hiking trails!">
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
               </form>
         </div>
+
+        <!--FAQ-->
+
+        <div id="faq" class="card my-5">
+          <div class="card-header">
+            FREQUENTLY ASKED QUESTIONS
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Have any questions?</h5>
+            <p class="card-text">Email us at "volcanoes@gmail.com" if you have any specific questions!</p>
+          </div>
+        </div>
+
+        <dl class="row my-5">
+          <dt class="col-sm-3">Where can I sign up?</dt>
+          <dd class="col-sm-9">Sign up on our home page above for a specific date to visit our wonderful volcanoes!</dd>
+        
+          <dt class="col-sm-3">How long are the hikes up the volcanoes?</dt>
+          <dd class="col-sm-9">
+            <p>Mt. Lassen takes 3-5 hours to complete, Mt. Hood takes 6-9 hours, Mt. Shasta takes around 9 hours.</p>
+            <p>Mt. Lassen has a vertical gain of around 2,000 feet, making it great for beginners. Mt. Hood is a bit harder at around 4,300 feet for our specific trail.
+              Mt. Shasta is the hardest of our hikes with an elevation of around 7,300 feet. </p>
+          </dd>
+        </dl>
+
+        <!--FOOTER-->
 
         <div class="container my-5">
             <ul class="nav nav-inline">

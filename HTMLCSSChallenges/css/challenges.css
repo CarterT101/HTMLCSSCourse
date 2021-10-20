@@ -1,0 +1,89 @@
+.pagecontainer {
+    position: relative;
+    min-height: 100vh;
+}
+
+.contentwrap {
+    padding-bottom: 2rem;
+}
+
+/*Image filter */
+
+.image1 {
+    display:block;
+    width: 50%;
+    margin:auto;
+    filter: blur(1.7px) sepia(50%);
+    border-radius: 15px;
+}
+
+/* Table customization */
+
+table {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: white;
+    border: 1px solid rgba(0,0,0,1);
+    border-radius: 10px;
+    background-color: darkturquoise;
+    padding: 1em;
+}
+
+th {
+    background-color: whitesmoke;
+    color: black;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border: 1px solid black;
+}
+ td {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border: 1px solid black;
+ }
+
+/* Image over text */
+
+ .containerimg {
+     position: relative;
+     text-align: center;
+     margin-bottom: 1em;
+ }
+ 
+ .containerimg img {
+     position: absolute;
+     padding-right: auto;
+     padding-left: auto;
+     border-radius: 15px;
+     height: auto;
+     max-width: 50%;
+ }
+
+ .text {
+    width:100%;
+    left:0px;
+    text-align: center;
+    position: absolute;
+    color: white;
+    text-shadow: 5px 3px rgba(0,0,0,.5);
+    font-size: 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }
+ 
+/* Footer */
+
+footer {
+    font-weight: bold;
+    bottom: 0px;
+    width: 100%;
+    height: 1rem;
+    text-align: center;
+    margin-bottom: 0em;
+}

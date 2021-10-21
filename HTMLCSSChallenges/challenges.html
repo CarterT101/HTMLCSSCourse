@@ -15,20 +15,36 @@
                 <a href="#about"><li>About</li></a>
                 <a href="#contact"><li>Contact</li></a>
             </ul>
-
-
-
         </div>
-        
-        <div>
+
+        <div id="home" class="pagecontainer">
+
+        <!--Header-->
+
             <div>
-                <h1 class="header1"> HTML CSS Challenges </h1>
+                <div>
+                    <h1 class="header1"> HTML CSS Challenges </h1>
 
+        <!--Columns-->
 
-                <!--Image Filter-->
+            <div>
+                <div class="row">
+                    <div class="column">
+                        <h2> Column 1 </h2>
+                        <p> This is a challenge </p>
+                    </div>
+                    <div class="column">
+                        <h2> Column 2 </h2>
+                        <p> This is a challenge </p>
+                    </div>
+                </div>
+            </div>
+
+        <!--Image Filter-->
+        
                 <img class="image1" src="imgs/img_1.png" alt="cool photo">
 
-                <!--Table customization-->
+        <!--Table customization-->
 
                 <table>
                     <tr>
@@ -43,15 +59,50 @@
                     </tr>
                 </table>
 
-                <!--Text overlay image-->
+        <!--Text overlay image-->
 
                 <div class="container">
-                        <img src="imgs/img_2.png" alt="cool photo 2" style="width:50%;">
-                        <div class="textcenter">This is a nice photo</div>
+                    <img src="imgs/img_2.png" alt="cool photo 2">
+                    <div class="centered">Nice photo</div>
                 </div>
-            </div>
 
-            <!--Footer-->
+        <!--Hover selector p tag-->
+
+                <p class="highlight"> Hover over this text! I dare ya! </p>
+
+        <!--Image overlay fade-->
+
+                <div class="imagecontainer">
+                    <img src="imgs/img_3.png" alt="another cool photo" class="image3" style="width:100%">
+                    <div class="middle">
+                        <div class="textopacity"><a href="#home">Surprise!</a></div>
+                    </div>
+                </div>
+
+        <!--Video-->
+        
+                <div class="video1">
+                    <video width="20%" controls autoplay muted loop>
+                        <source  src="imgs/excuse-me.mp4" type="video/mp4">
+                        <source  src="imgs/excuse-me.webm" type="video/webm">
+                        This is a video of a shiba
+                    </video>
+                </div>
+
+        <!--Video Overlay-->
+
+                <div class="videocontainer">
+                    <video class="video2" width="20%" autoplay muted loop>
+                        <source src="imgs/anger_ACTIVATED.mp4" type="video/mp4">
+                        <source src="imgs/anger_ACTIVATED.webm" type="video/webm">
+                        This is an angry shiba
+                    </video>
+                    <div class="middlevideo">
+                        <div class="textvideo">angery</div>
+                    </div>
+                </div>
+
+        <!--Footer-->
 
                 <footer> This is my footer </footer>
         </div>

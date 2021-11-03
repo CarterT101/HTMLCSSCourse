@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Switzerland</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <script src="js/main.js" defer></script>
+    </head>
+    <body>
+
+        <!--Nav-->
+
+        <div class="wrap">
+			<div class="menu-container">
+				<div class="menu">
+					<ul>
+						<a href="#pics"><li>Pictures </li></a> 
+						<a href="#vids"><li>Videos </li></a> 
+						<a href="#contact"><li>Contact </li></a>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+        <h2>Switzerland!</h2>
+
+        <p> Visit Switzerland, it's beautiful!</p><br>
+
+        <div class="row">
+
+            <div class="column">
+                <img src="images/img1.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            </div>
+
+            <div class="column">
+                <img src="images/img2.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            </div>
+
+            <div class="column">
+                <img src="images/img3.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            </div>
+
+            <div class="column">
+                <img src="images/img4.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            </div>
+
+        </div>
+
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="images/img1wide.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="images/img2wide.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="images/img3wide.png" style="width:100%">
+                </div>
+                
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="images/img4wide.png" style="width:100%">
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+
+                <div class="column">
+                    <img class="demo cursor" src="images/img1wide.png" style="width:100%" onclick="currentSlide(1)" alt="Switzerland">
+                </div>
+
+                <div class="column">
+                    <img class="demo cursor" src="images/img2wide.png" style="width:100%" onclick="currentSlide(2)" alt="Switzerland">
+                </div>
+
+                <div class="column">
+                    <img class="demo cursor" src="images/img3wide.png" style="width:100%" onclick="currentSlide(3)" alt="Switzerland">
+                </div>
+
+                <div class="column">
+                    <img class="demo cursor" src="images/img4wide.png" style="width:100%" onclick="currentSlide(4)" alt="Switzerland">
+                </div>
+
+            </div>
+        </div>
+
+        <!--VIDEO-->
+
+		<div>
+			<br>
+			<iframe id="vids" height="360" width="640" src="https://www.youtube.com/embed/linlz7-Pnvw"> </iframe>
+			<br>
+		</div>
+
+        <!--Signup-->
+
+        <div id="contact" class="signup">
+			<h3> Sign up to go! </h3>
+					
+						<div>
+							<form action="" method="post">
+								Email: <input type="text" name="email" placeholder="Input your email here"> <br>
+								Password: <input type="text" name="email" placeholder="Input your password here"> <br>
+							</form>
+						</div>
+
+						<div class="flag">
+							<span class="white stripever"></span>
+							<span class="white stripehor"></span>
+					    </div>
+					<br>
+		</div>
+
+        <!--FOOTER-->
+		<div>
+			<footer id="footer"> This was a website made by Carter T. </footer>	
+		</div>
+
+    </body>
+</html>
